@@ -6,8 +6,10 @@ dev_profile.forEach(profile => {
         <table class="table table-borderless">
         <tr>
         <td style="width: 150px;" rowspan = "3">
+        <a href="profile/${profile.id}/profile.html">
             <img src="profile/${profile.id}/profile-img.jpg" alt="">
-                <a style="color:#fff; font-size: small;" href="profile/${profile.id}/profile.html">View Profile</a>
+        </a>
+            <a style="color:#fff; font-size: small;" href="profile/${profile.id}/profile.html">View Profile</a>
         </td>
         <td class="text-left">
             <div class="name">
