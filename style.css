@@ -17,3 +17,15 @@ img.logo{
 .form-control{
     margin: 5px;
 }
+test{
+    color: dodgerblue;
+}
+
+/* developers/index */
+.my-row-profile{
+    width: 100%;
+    background-color: dodgerblue;
+}
+table{
+    border: solid 1px black;
+}
