@@ -16,7 +16,7 @@ let dev_profile = [
         first_name: "Steven",
         last_name: "Serrano",
         skills: ['Frontend Webdev','Adobe Photoshop','Adobe Premiere'],
-        bio: "paro paro g, fly high butterfly",
+        bio: "Willing To Learn More Things And Solve Problems, Capable Of Working With Anyone. And I Am A Hardworking, Also A Quick-Witted Working Person.",
         contact_no: '0926079xxxx',
         email: 'steven.serrano@tup.edu.ph'
     },
@@ -25,7 +25,7 @@ let dev_profile = [
         first_name: "Briane Gail",
         last_name: "Castada",
         skills: ['skill1','skill2','skill3'],
-        bio: "paro paro g, fly high butterfly 2",
+        bio: "I Am Both Driven And Self-Motivated, And I Am Constantly Experimenting With New Technologies And Techniques. I Am Very Passionate About Web Development, And Strive To Better Myself` As A Developer, And The Development Community As A Whole.",
         contact_no: '09672803133',
         email: 'Brianegailcastada@Tup.Edu.Ph'
     },
@@ -34,7 +34,7 @@ let dev_profile = [
         first_name: "Raissel",
         last_name: "Lamangan",
         skills: ['skill1','skill2','skill3'],
-        bio: "paro paro g, fly high butterfly 2",
+        bio: "You Can Call Me Rai, Inquisitive,Sentive And Appriciative Are The Words That Could Describe Me.I'm A 3rd Year Student In Technological University Of The Philippines Taking Bachelor Of Science In Information System.",
         contact_no: '0916-772-9926',
         email: 'Raissel.Lamangan@Tup.Edu.Ph'
     },
@@ -43,7 +43,7 @@ let dev_profile = [
         first_name: "Aumer Meak",
         last_name: "Bagorio",
         skills: ['skill1','skill2','skill3'],
-        bio: "paro paro g, fly high butterfly 2",
+        bio: "A Cheery And Optimistic Person. But Gets Agitated If My Code Has A Missing Semi Colon. I'm A 3rd Year Student In Technological University Of The Philippines And My Course Is Information System.",
         contact_no: '09435533691',
         email: 'Aumermeakgloriabagorio@Tup.Edu.Ph'
     }
