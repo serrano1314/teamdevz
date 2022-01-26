@@ -18,7 +18,7 @@ dev_profile.forEach(profile => {
         </tr>
         <tr>
             <td rowspan="2">
-                <h6>${profile.bio}</h6> 
+                <h6 class="text-left">${profile.bio}</h6> 
             </td>
             <td style="width: 300px;">
                 <h6>${profile.skills.join(' | ')}</h6> 
