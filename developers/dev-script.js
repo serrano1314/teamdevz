@@ -9,7 +9,7 @@ dev_profile.forEach(profile => {
             <img src="profile/${profile.id}/profile-img.jpg" alt="">
                 <a style="color:#fff; font-size: small;" href="profile/${profile.id}/profile.html">View Profile</a>
         </td>
-        <td colspan="2">
+        <td class="text-left">
             <div class="name">
                 <h4>${profile.first_name + ' ' + profile.last_name}</h4> 
             </div> 
