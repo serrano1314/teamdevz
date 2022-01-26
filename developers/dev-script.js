@@ -4,7 +4,7 @@ document.querySelector('.profile-card').innerHTML = `
 <tr>
    <td style="width: 150px;" rowspan = "3">
        <img src="profile/0/profile-img.jpg" alt="">
-        <a style="color:#fff; font-size: small;" href="#">View Profile</a>
+        <a style="color:#fff; font-size: small;" href="profile/${dev_profile_test[0].id}/profile.html">View Profile</a>
    </td>
    <td colspan="2">
     <div class="name">
