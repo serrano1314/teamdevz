@@ -37,5 +37,14 @@ let dev_profile = [
         bio: "paro paro g, fly high butterfly 2",
         contact_no: '0916-772-9926',
         email: 'Raissel.Lamangan@Tup.Edu.Ph'
+    },
+    {
+        id: '3', //please add 1 if adding new profile
+        first_name: "Aumer Meak",
+        last_name: "Bagorio",
+        skills: ['skill1','skill2','skill3'],
+        bio: "paro paro g, fly high butterfly 2",
+        contact_no: '09435533691',
+        email: 'Aumermeakgloriabagorio@Tup.Edu.Ph'
     }
         ];

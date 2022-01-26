@@ -1,4 +1,4 @@
-let a = 1;
+
 let profile_card = document.querySelector('.profile-container');
 dev_profile.forEach(profile => {
     let str = `
