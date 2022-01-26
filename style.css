@@ -22,10 +22,17 @@ test{
 }
 
 /* developers/index */
-.my-row-profile{
-    width: 100%;
-    background-color: dodgerblue;
+.profile-card{
+    border-radius: 15px;
+    /* background-image: linear-gradient(to bottom right, rgb(48, 48, 48) , rgb(158, 158, 158)); */
+    background-color: rgb(105, 148, 179);
+    padding: 10px 0 0 10px;
 }
-table{
-    border: solid 1px black;
+table td{
+    /* border: solid 1px black; */
+}
+.profile-card img{
+    border: solid 1px white;
+    border-radius: 100px;
+    height: 150px;
 }

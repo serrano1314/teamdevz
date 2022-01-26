@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
     <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../logo.ico">
 </head>
 <body class="text-center text-white" style="background-color: #333;">
 
@@ -27,21 +28,38 @@
         </header>
 
         <main class="mt-5">
-            <h3>Our Best Devs</h3>
+            <h3 class="mb-5">Our Best Devs</h3>
             <div class="container">
-                <table>
+                <div class="profile-card">
+                <table class="table table-borderless">
                     <tr>
-                       <td rowspan = "3">image</td>
-                       <td colspan="2">Name</td>
+                       <td style="width: 150px;" rowspan = "3">
+                           <img src="profile/0/profile-img.jpg" alt="">
+                            <a style="color:#fff; font-size: small;" href="#">View Profile</a>
+                       </td>
+                       <td colspan="2">
+                        <div class="name">
+                            <h6>Name</h6> 
+                        </div> 
+                        </td>
+                       
                     </tr>
                     <tr>
-                       <td colspan="2">Description</td>
+                        <td rowspan="2">
+                            <h6>Bio</h6> 
+                        </td>
+                        <td style="width: 300px;">
+                            <h6>Skills</h6> 
+                        </td>
                     </tr>
                     <tr>
-                       <td>Hire</td>
-                       <td>Contact</td>
+                       <td>
+                        <button class="btn btn-success">Hire</button>
+                        <button class="btn btn-secondary">Contact</button>
+                       </td>
                     </tr>
                  </table>
+                </div>
             </div>
         </main>
 
@@ -52,7 +70,8 @@
         </footer>
     </div>
     
-
+    <script src="dev-info.js"></script>
+    <script src="dev-script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
