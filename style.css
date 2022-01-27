@@ -82,13 +82,45 @@ a:hover{
 }
 /* about */
 .about-card{
-    border-bottom: solid 2px rgb(135, 211, 255);
+    border-bottom: solid 3px rgb(135, 211, 255);
     margin: 30px auto;
     height: 300px;
     width: 300px;
     border-radius: 8px;
     /* opacity: .9; */
-    background-image: radial-gradient(rgb(109, 109, 109), rgba(211, 211, 211, 0.5))
+    background-image: radial-gradient(rgb(109, 109, 109), rgba(211, 211, 211, 0.5));
+    
+    animation: colorChangeout 1s forwards;
 }
 .inner-about-card{
+}
+.about-card:hover{
+    animation: colorChangeIn 1s forwards;
+}
+@keyframes colorChangeIn {
+    0%{
+        border-color: rgb(135, 211, 255);
+        transform: scale(1);
+    }
+    50%{
+        border-color: rgb(243, 182, 255);
+    }
+    100%{
+        border-color: rgb(255, 135, 135);
+        transform: scale(1.1)
+    }
+}
+
+@keyframes colorChangeout {
+    0%{
+        border-color: rgb(255, 135, 135);
+        transform: scale(1.1);
+    }
+    50%{
+        border-color: rgb(243, 182, 255);
+    }
+    100%{
+        border-color: rgb(135, 211, 255);
+        transform: scale(1)
+    }
 }
