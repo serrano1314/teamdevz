@@ -24,16 +24,57 @@ test{
 
 /* developers/index */
 .profile-card{
-    border-radius: 15px;
-    /* background-image: linear-gradient(to bottom right, rgb(48, 48, 48) , rgb(158, 158, 158)); */
-    background-color: rgb(127, 179, 216);
-    padding: 10px 10px 0 10px;
+    margin: 10px 0;
 }
 table td{
     /* border: solid 1px black; */
 }
-.profile-card img{
-    border: solid 1px white;
-    border-radius: 100px;
-    height: 150px;
+.footer{
+    height: 25px;
+    background-color: #00000028;
+}
+/* profile cards */
+.card {
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(159, 186, 224));
+    color: #000;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer
+}
+.card img{
+    border: solid 1px #fff;
+}
+.card:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #8ed2ff;
+    transform: scaleY(1);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background-color: #2984fc;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after {
+    transform: scaleY(1)
+}
+a:hover{
+    text-decoration-color:#fff ;
 }

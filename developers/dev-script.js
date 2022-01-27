@@ -1,42 +1,34 @@
 
 let profile_card = document.querySelector('.profile-container');
 dev_profile.forEach(profile => {
-    let str = `
-        <div class="profile-card">
-        <table class="table table-borderless">
-        <tr>
-        <td style="width: 150px;" rowspan = "3">
-        <a href="profile/${profile.id}/profile.html">
-            <img src="profile/${profile.id}/profile-img.jpg" alt="">
-        </a>
-            <a style="color:#fff; font-size: small;" href="profile/${profile.id}/profile.html">View Profile</a>
-        </td>
-        <td class="text-left">
-            <div class="name">
-                <h4>${profile.first_name + ' ' + profile.last_name}</h4> 
-            </div> 
-            </td>
-        
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <h6 class="text-left">${profile.bio}</h6> 
-            </td>
-            <td style="width: 300px;">
-                <h6>${profile.skills.join(' | ')}</h6> 
-            </td>
-        </tr>
-        <tr>
-        <td>
-            <button class="btn btn-success">Hire</button>
-            <button class="btn btn-secondary">Contact</button>
-        </td>
-        </tr>
-        </table>
+    let str2 = `
+        <div class="row profile-card d-flex justify-content-center">
+            <div class="col">
+                <div class="card p-3 py-4">
+                    <div class=""> 
+                        <a href="profile/${profile.id}/profile.html">
+                        <img src="profile/${profile.id}/profile-img.jpg" width="100" class="rounded-circle"> 
+                        </br><span style="font-size:small;"class="text-white">Know more about ${profile.first_name} </span>
+                        </a>
+                    </div>
+                    <div class="mt-3"> 
+                        <span class="bg-secondary p-1 px-4 rounded text-white">Role</span>
+                        <h4 class="mt-2 mb-0">${profile.first_name + ' ' + profile.last_name}</h4> 
+                        <span><h6>${profile.skills.join(' | ')}</h6></span>
+                        <div class="px-4 mt-1">
+                            <p>${profile.bio}</p>
+                        </div>
+                        <div class="buttons"> 
+                            <button class="btn btn-primary px-4">Hire</button> 
+                            <button class="btn btn-outline-primary px-4 ms-3">Contact</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     `;
     
-profile_card.insertAdjacentHTML('beforeend',str);
+profile_card.insertAdjacentHTML('beforeend',str2);
 });
 
 
