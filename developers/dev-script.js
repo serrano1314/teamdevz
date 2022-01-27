@@ -12,7 +12,7 @@ dev_profile.forEach(profile => {
                         </a>
                     </div>
                     <div class="mt-3"> 
-                        <span class="bg-secondary p-1 px-4 rounded text-white">Role</span>
+                        <span class="bg-secondary p-1 px-4 rounded text-white">${profile.role}</span>
                         <h4 class="mt-2 mb-0">${profile.first_name + ' ' + profile.last_name}</h4> 
                         <span><h6>${profile.skills.join(' | ')}</h6></span>
                         <div class="px-4 mt-1">
