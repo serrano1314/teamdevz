@@ -30,12 +30,14 @@ table td{
     /* border: solid 1px black; */
 }
 .footer{
-    height: 25px;
+    height: 20px;
     background-color: #00000028;
+    font-size: small;
 }
 /* profile cards */
 .card {
-    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(159, 186, 224));
+    /* resize: both; */
+    background-image: linear-gradient(to right, rgb(234, 239, 241) , rgb(188, 222, 255));
     color: #000;
     border: none;
     position: relative;
@@ -77,4 +79,16 @@ table td{
 }
 a:hover{
     text-decoration-color:#fff ;
+}
+/* about */
+.about-card{
+    border-bottom: solid 2px rgb(135, 211, 255);
+    margin: 30px auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+    /* opacity: .9; */
+    background-image: radial-gradient(rgb(109, 109, 109), rgba(211, 211, 211, 0.5))
+}
+.inner-about-card{
 }

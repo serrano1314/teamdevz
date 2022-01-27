@@ -21,7 +21,7 @@ let dev_profile = [
         email: 'Brianegailcastada@Tup.Edu.Ph'
     },
     {
-        id: '2', //please add 1 if adding new profile
+        id: '2',
         first_name: "Raissel",
         last_name: "Lamangan",
         role: "Software Designer",
