@@ -82,6 +82,7 @@ a:hover{
 }
 /* about */
 .about-card{
+    cursor: default;
     border-bottom: solid 3px rgb(135, 211, 255);
     margin: 30px auto;
     height: 300px;
