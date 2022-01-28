@@ -7,8 +7,8 @@ dev_profile.forEach(profile => {
                 <div class="card p-3 py-4">
                     <div class=""> 
                         <a href="profile/${profile.id}/profile.html">
-                        <img src="profile/${profile.id}/profile-img.jpg" width="100" class="rounded-circle"> 
-                        </br><span style="font-size:small;"class="text-white">Know more about ${profile.first_name} </span>
+                        <img src="profile/${profile.id}/profile-img.jpg" width="100" class="rounded-circle img-crop"> 
+                        </br><span style="font-size:small;color:#bababa;">Know more about ${profile.first_name} </span>
                         </a>
                     </div>
                     <div class="mt-3"> 

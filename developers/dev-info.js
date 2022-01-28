@@ -39,5 +39,25 @@ let dev_profile = [
         bio: "A Cheery And Optimistic Person. But Gets Agitated If My Code Has A Missing Semi Colon. I'm A 3rd Year Student In Technological University Of The Philippines And My Course Is Information System.",
         contact_no: '09435533691',
         email: 'Aumermeakgloriabagorio@Tup.Edu.Ph'
+    },
+    {
+        id: '4', //please add 1 if adding new profile
+        first_name: "Vans",
+        last_name: "Martinez",
+        role: "Software Designer",
+        skills: ['Time Management ','Communication','Creativity'],
+        bio: "I Like To Cook, Read Novels And Edit Videos. Also, I Am A Shy Person But When It Comes To My Friends, I Feel Comfortable. I Am 20 Years Old And Also A 3rd Year College Student In Technology University Of The Philippines And Taking The Course Bachelor Of Science In Information System.",
+        contact_no: '09613107368',
+        email: ''
+    },
+    {
+        id: '5', //please add 1 if adding new profile
+        first_name: "Janwry",
+        last_name: "Dela Cruz",
+        role: "Database Support Personel",
+        skills: ['Management  ','Problem solving','Security Awareness'],
+        bio: "A Friendly And Kind Student. I'm A 3rd Year Student In Technological University Of The Philippines And My Course Is Information System.",
+        contact_no: '09552868891',
+        email: 'Janwry.Delacruz@Tup.Edu.Ph'
     }
         ];

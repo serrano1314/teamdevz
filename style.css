@@ -55,7 +55,13 @@ table td{
 }
 .card img{
     border: solid 1px #fff;
+    width: 100px;
+    height: 100px;
 }
+.img-crop {
+    object-fit: cover;
+}
+
 .card:before {
     content: "";
     position: absolute;
@@ -101,27 +107,21 @@ a:hover{
     height: 300px;
     width: 300px;
     border-radius: 8px;
-    /* opacity: .9; */
     background-image: radial-gradient(rgb(109, 109, 109), rgba(211, 211, 211, 0.5));
     
-    animation: colorChangeout 1s forwards;
-    animation: sizeDec 1s;
+    animation: colorChangeout 1s forwards, sizeDec 1s;
 }
-.inner-about-card{
-}
-.about-card:hover{
+.about-card:hover,.merch-card:hover{
     
     animation: sizeInc 1s forwards, colorChangeIn 1s forwards;
 }
 
 /* merch */
 .merch-card{
-    margin: 15px auto;
+    margin: 30px auto;
     height: 300px;
     width: 300px;
     border-radius: 10px;
-    /* opacity: .9; */
-    /* background-image: radial-gradient(rgb(255, 255, 255), #e2e2e2); */
     background-color: rgb(230, 230, 230);
     
     animation: colorChangeout 1s forwards;
