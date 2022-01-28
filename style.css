@@ -113,6 +113,29 @@ a:hover{
     
     animation: sizeInc 1s forwards, colorChangeIn 1s forwards;
 }
+
+/* merch */
+.merch-card{
+    margin: 15px auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    /* opacity: .9; */
+    /* background-image: radial-gradient(rgb(255, 255, 255), #e2e2e2); */
+    background-color: rgb(230, 230, 230);
+    
+    animation: colorChangeout 1s forwards;
+    animation: sizeDec 1s;
+    
+    border-top: solid 3px rgb(169, 209, 255);
+}
+.merch-card img{
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: solid 1px rgb(153, 153, 153);
+}
+
 @keyframes colorChangeIn {
     0%{
         border-color: rgb(135, 211, 255);
