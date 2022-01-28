@@ -13,7 +13,14 @@ img.logo{
 .my-nav>a{
     color: #fff;
     font-size: large;
-    margin-left: 50px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.my-nav>a{
+    border-left: solid 1px #fff;
+}
+.my-nav>a:first-child{
+    border-left: 0;
 }
 .form-control{
     margin: 5px;
@@ -71,7 +78,7 @@ table td{
     height: 100%;
     background-color: #2984fc;
     transform: scaleY(0);
-    transition: all 0.5s;
+    transition: all 1s;
     transform-origin: bottom;
 }
 
@@ -90,7 +97,7 @@ a:hover{
 .about-card{
     cursor: default;
     border-bottom: solid 3px rgb(135, 211, 255);
-    margin: 30px auto;
+    margin: 15px auto;
     height: 300px;
     width: 300px;
     border-radius: 8px;
@@ -103,8 +110,8 @@ a:hover{
 .inner-about-card{
 }
 .about-card:hover{
-    animation: colorChangeIn 1s forwards;
-    animation: sizeInc 1s forwards;
+    
+    animation: sizeInc 1s forwards, colorChangeIn 1s forwards;
 }
 @keyframes colorChangeIn {
     0%{
