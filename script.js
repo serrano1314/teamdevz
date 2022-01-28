@@ -42,7 +42,7 @@ merch_info.forEach(item => {
     <div class="merch-card d-flex">
         <div class="inner-merch-card align-self-center text-center px-5">
             <img src="/images/merch/${item.filename}" alt="">
-            <div class="font-weight-bold p-1">${item.name} - ${item.price}</div>
+            <div class="font-weight-bold p-1">${item.name} - $${item.price}</div>
             <button type="button" class="btn btn-outline-secondary btn-sm">
                 Add to cart
             </button>
