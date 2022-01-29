@@ -9,10 +9,11 @@ img.logo{
     width: 100%;
     /* background-color: rgb(34, 34, 34); */
     text-align: right;
+    text-transform: uppercase;
 }
 .my-nav>a{
     color: #fff;
-    font-size: large;
+    font-size: medium;
     padding-left: 20px;
     margin-right: 20px;
 }
@@ -32,9 +33,6 @@ test{
 /* developers/index */
 .profile-card{
     margin: 10px 0;
-}
-table td{
-    /* border: solid 1px black; */
 }
 .footer{
     height: 20px;
@@ -61,7 +59,45 @@ table td{
 .img-crop {
     object-fit: cover;
 }
-
+.popup-contact{
+    display: block;
+    background-image: linear-gradient(to right, #e4e4e4 , #f7f7f7);
+    border-start-start-radius: 10px;
+    min-width: 300px; 
+    min-height: 430px;
+    bottom: 0;
+    right: 0;
+    box-shadow: 1px 1px 10px 1px #00000069;
+    position: fixed;
+    z-index: 1;
+    animation: popupChat 1s forwards;
+}
+.chat-socmed a{
+    margin-left: 20px;
+}
+@keyframes popupChat{
+    from{
+        opacity: 0;
+    }
+    to{
+        right: 1;
+    }
+}
+.chat-field{
+    /* background-color: #8ed2ff; */
+    width: 250px;
+    height: 280px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 15px;
+}
+.close-chat{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
 .card:before {
     content: "";
     position: absolute;
