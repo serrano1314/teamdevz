@@ -75,6 +75,10 @@ test{
 .chat-socmed a{
     margin-left: 20px;
 }
+.popup-contact input[type=text]{
+    width: 70%;
+}
+.popup-contact for
 @keyframes popupChat{
     from{
         opacity: 0;
