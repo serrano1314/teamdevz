@@ -60,7 +60,7 @@
             <div class="popup-contact d-none">
                 <div class="other-contact-info text-dark pt-2">
                     <div class="close-chat">
-                    <i onclick="closeChat()" class="fa fa-close m-1" style="font-size:25px;color:#ffa9a9"></i>
+                    <i onclick="closeChat()" class="bi bi-x m-1" style="font-size:25px;color:#ffa9a9"></i>
                     </div>
                     <h5>${profile.first_name} </h5>
                     <div class="chat-socmed">
@@ -86,14 +86,69 @@
                     </div>
                 </div>
                 <div class="message-form" class="pt-3">
-                    <input type="text" name="message" id="" placeholder=" Type message here...">
-                    <button type="button" style="border:none;background-color:#00000000">
+                    <input type="text" name="message" id="myMessage" placeholder=" Type message here..." autocomplete="off">
+                    <button onclick="sendMessage()" class="sendMessage" id="sendMessage" type="button" style="border:none;background-color:#00000000">
                     <i class="bi bi-send" style="font-size:18px;color:blue;""></i>
                     </button>
                     
                 </div>
             </div>
         </section>
+        <div class="hire-popup pr-4 text-dark">
+            <div class="d-flex flex-column pl-3">
+                <div class="pt-3">
+                    <h3>Hire</h3>
+                </div>
+                <div class="form-row text-left">
+                    <div class="form-group col-md-8">
+                        
+                    <h5>Job Information</h5>
+                        <input class="form-control" type="text" placeholder="Job/Project Name">
+                        <textarea class="form-control" placeholder="Job Description"></textarea>
+                        
+                    </div>
+                </div>
+
+                <div class="form-row text-left">
+                    <div class="form-group col-md-4">
+                        <label for="jobType">Job Type</label>
+                        <select id="jobType" class="form-control">
+                            <option selected>One-time Project</option>
+                            <option>Hourly</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="budget">Budget (₱)</label>
+                        <input type="number" class="form-control" id="budget">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12 text-left">
+                        <h5>Job Duration</h5>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Start" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="End" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                    </div>
+                </div>
+                <div class="form-row mt-4 text-left">
+                    <div class="form-group col-md-8">
+                        <h5>Initial Task or Instructions</h5>
+                        <input class="form-control" type="text" placeholder="Initial Task">
+                        <input class="form-control" type="text" placeholder="Initial Task">
+                        <h5>Message</h5>
+                        <textarea class="form-control" cols="5" rows="5"></textarea>
+                        <div class="text-center m-3">
+                        <button class="btn btn-primary" name="submit" type="submit">Create Contract</button>
+                        </div>
+                    </div>
+                </div>
+
+                <i onclick="closeHire()" class="bi bi-x m-1 close-chat" style="font-size:25px;color:#000000"></i>
+            </div>
+        </div>
         <footer class="footer mt-auto fixed-bottom">
         <div class="inner">
             <p>© 2022 Copyright: TeamDevz</p>

@@ -59,6 +59,18 @@ test{
 .img-crop {
     object-fit: cover;
 }
+.hire-popup{
+    overflow-y: auto;
+    position:fixed;
+    background-color: #f3f3f3;
+    height:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    box-shadow: 1px 1px 10px 1px #00000069;
+    animation: popupChat 1s forwards;
+    display: none;
+}
 .popup-contact{
     display: block;
     background-image: linear-gradient(to right, #e4e4e4 , #f7f7f7);
@@ -235,6 +247,7 @@ a:hover{
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
+    border-radius: 10px;
   }
   
   /* Track */
@@ -244,6 +257,7 @@ a:hover{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
     background: #888; 
   }
   

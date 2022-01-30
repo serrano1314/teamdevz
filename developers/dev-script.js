@@ -19,7 +19,7 @@ dev_profile.forEach(profile => {
                             <p>${profile.bio}</p>
                         </div>
                         <div class="buttons"> 
-                            <button class="btn btn-primary px-4">Hire</button> 
+                            <button class="btn btn-primary px-4" onclick="openHire()">Hire</button> 
                             <button class="btn btn-outline-primary px-4 ms-3 contact-talent-btn " value="${profile.id}">Contact</button> 
                         </div>
                     </div>
@@ -37,6 +37,13 @@ function openChat() {
   
 function closeChat() {
 document.querySelector(".popup-contact").style.display = "none";
+}
+
+function closeHire(){
+    document.querySelector(".hire-popup").style.display = "none";
+}
+function openHire(){
+    document.querySelector(".hire-popup").style.display = "block";
 }
 
 contact_btns = document.querySelectorAll('.contact-talent-btn');
