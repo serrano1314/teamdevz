@@ -93,6 +93,9 @@ test{
     margin-right: 0;
     padding: 5px 8px;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
 @keyframes popupChat{
     from{
         opacity: 0;
@@ -109,6 +112,9 @@ test{
     left: 0;
     right: 0;
     margin-top: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 5px;
 }
 .close-chat{
     position: absolute;
@@ -225,3 +231,22 @@ a:hover{
     0%{transform: scale(1.1);}
     100%{ transform: scale(1) }
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
