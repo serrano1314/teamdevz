@@ -41,43 +41,70 @@ document.querySelector(".popup-contact").style.display = "none";
 
 contact_btns = document.querySelectorAll('.contact-talent-btn');
 
+
 for (let i=0; i<contact_btns.length; i++) {
     contact_btns[i].addEventListener("click", function() {
         document.querySelector('.chatbox-sec').innerHTML = "";
         let profile = dev_profile[i];
         let id = contact_btns[i].value;
         chat_str = `
-            <div class="popup-contact">
-                <div class="other-contact-info text-dark pt-2">
-                    <div class="close-chat">
-                    <i onclick="closeChat()" class="fa fa-close" style="font-size:18px;color:#ffa9a9"></i>
-                    </div>
-                    <h5>${profile.first_name} </h5>
-                    <div class="chat-socmed">
-                    <a href=""><i class="fa fa-facebook" style="font-size:18px"></i></a>
-                    <a href=""><i class="fa fa-twitter" style="font-size:18px"></i></a>
-                    <a href=""><i class="fa fa-linkedin" style="font-size:18px"></i></a>
-                    </div>
-                    
-                </div>
-                <div class="chat-field">
-                    <div class="text-left d-flex ">
-                        <div class="">
-                        <img src="profile/${profile.id}/profile-img.jpg" width="40" class="rounded-circle img-crop"> 
-                        </div>
-                        <div class="small p-2 ml-3" style="width: 70%; background-color: cornflowerblue; border-radius: 10px;">
-                            Hello! You can also try to reach me at my social media accounts by clicking icons above! :)
-                        </div>
-                    </div>
-                </div>
-                <form action="" class="pt-3">
-                    <input type="text" name="message" id="" placeholder="Type message here...">
-                    <input type="submit">
-                </form>
+        <div class="popup-contact">
+        <div class="other-contact-info text-dark pt-2">
+            <div class="close-chat">
+            <i onclick="closeChat()" class="bi bi-x m-1" style="font-size:25px;color:#ffa9a9"></i>
             </div>
+            <h5>${profile.first_name} </h5>
+            <div class="chat-socmed">
+            <a href="https://fb.com/" target="_blank"><i class="bi bi-facebook" style="font-size:18px"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter" style="font-size:18px"></i></a>
+            <a href="https://linkedin.com/in/" target="_blank"><i class="bi bi-linkedin" style="font-size:18px"></i></a>
+            </div>
+            
+        </div>
+        <div class="chat-field">
+            <div class="text-left d-flex ">
+                <div class="">
+                <img src="profile/${profile.id}/profile-img.jpg" width="40" class="rounded-circle img-crop"> 
+                </div>
+                <div class="conversation">
+                    <div class="small p-2 ml-3 bubble">
+                        Hello! You can also try to reach me at my social media accounts by clicking icons above! :)
+                    </div>
+                    <div class="small bubble sent-bubble d-none">
+                        test
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message-form" class="pt-3">
+            <input type="text" name="message" id="myMessage" placeholder=" Type message here...">
+            <button onclick="sendMessage()" class="sendMessage" id="sendMessage" type="button" style="border:none;background-color:#00000000">
+            <i class="bi bi-send" style="font-size:18px;color:blue;""></i>
+            </button>
+            
+        </div>
+    </div>
         `;
 
-        
         document.querySelector('.chatbox-sec').innerHTML = chat_str;
+        myMessageInput = document.getElementById('myMessage')
+        myMessageInput.focus()
+        
+        myMessageInput.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        });
     });
 }
+function sendMessage(){
+    message = document.getElementById('myMessage').value;
+    if(!message) return;
+    document.getElementById('myMessage').value = "";
+    new_bubble = document.createElement('div');
+    new_bubble.classList.add('small');
+    new_bubble.classList.add('bubble')
+    new_bubble.classList.add('sent-bubble')
+    new_bubble.innerText = message;
+    document.querySelector('.conversation').appendChild(new_bubble)
+};

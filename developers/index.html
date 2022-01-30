@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../logo.ico">
 </head>
@@ -55,34 +56,42 @@
             </div>
         </main>
         <section class="chatbox-sec">
-            
+            <!-- for testing purposes -->
             <div class="popup-contact d-none">
                 <div class="other-contact-info text-dark pt-2">
                     <div class="close-chat">
-                    <i onclick="closeChat()" class="fa fa-close" style="font-size:18px;color:#ffa9a9"></i>
+                    <i onclick="closeChat()" class="fa fa-close m-1" style="font-size:25px;color:#ffa9a9"></i>
                     </div>
-                    <h5>Steven Serrano </h5>
+                    <h5>${profile.first_name} </h5>
                     <div class="chat-socmed">
-                    <a href=""><i class="fa fa-facebook" style="font-size:18px"></i></a>
-                    <a href=""><i class="fa fa-twitter" style="font-size:18px"></i></a>
-                    <a href=""><i class="fa fa-linkedin" style="font-size:18px"></i></a>
+                    <a href="https://fb.com/" target="_blank"><i class="bi bi-facebook" style="font-size:18px"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter" style="font-size:18px"></i></a>
+                    <a href="https://linkedin.com/in/" target="_blank"><i class="bi bi-linkedin" style="font-size:18px"></i></a>
                     </div>
                     
                 </div>
                 <div class="chat-field">
                     <div class="text-left d-flex ">
                         <div class="">
-                        <img src="profile/0/profile-img.jpg" width="40" class="rounded-circle img-crop"> 
+                        <img src="profile/${profile.id}/profile-img.jpg" width="40" class="rounded-circle img-crop"> 
                         </div>
-                        <div class="small p-2 ml-3" style="width: 70%; background-color: cornflowerblue; border-radius: 10px;">
-                            Hello! You can also try to reach me at my social media accounts by clicking icons above! :)
+                        <div class="conversation">
+                            <div class="small p-2 ml-3 bubble">
+                                Hello! You can also try to reach me at my social media accounts by clicking icons above! :)
+                            </div>
+                            <div class="small bubble sent-bubble d-none">
+                                test
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form action="" class="pt-3">
-                    <input type="text" name="message" id="" placeholder="Type message here...">
-                    <input type="submit" value="Send">
-                </form>
+                <div class="message-form" class="pt-3">
+                    <input type="text" name="message" id="" placeholder=" Type message here...">
+                    <button type="button" style="border:none;background-color:#00000000">
+                    <i class="bi bi-send" style="font-size:18px;color:blue;""></i>
+                    </button>
+                    
+                </div>
             </div>
         </section>
         <footer class="footer mt-auto fixed-bottom">

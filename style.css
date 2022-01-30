@@ -77,6 +77,21 @@ test{
 }
 .popup-contact input[type=text]{
     width: 70%;
+    border: 0;
+    border-radius: 6px;
+    height: 35px;
+}
+.bubble{
+    width: 75%; 
+    background-color: cornflowerblue; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sent-bubble{
+    background-color: #bdbdbd;
+    margin-left: auto; 
+    margin-right: 0;
+    padding: 5px 8px;
 }
 @keyframes popupChat{
     from{
