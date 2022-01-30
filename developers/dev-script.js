@@ -93,6 +93,8 @@ for (let i=0; i<contact_btns.length; i++) {
         myMessageInput.addEventListener("keydown", function(event) {
             if (event.key === "Enter") {
                 sendMessage();
+                chat_field = document.querySelector('.chat-field');
+                chat_field.scrollTop = chat_field.scrollHeight;
             }
         });
     });
