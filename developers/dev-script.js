@@ -77,7 +77,7 @@ for (let i=0; i<contact_btns.length; i++) {
             </div>
         </div>
         <div class="message-form" class="pt-3">
-            <input type="text" name="message" id="myMessage" placeholder=" Type message here...">
+            <input type="text" name="message" id="myMessage" placeholder=" Type message here..." autocomplete="off">
             <button onclick="sendMessage()" class="sendMessage" id="sendMessage" type="button" style="border:none;background-color:#00000000">
             <i class="bi bi-send" style="font-size:18px;color:blue;""></i>
             </button>
@@ -93,8 +93,6 @@ for (let i=0; i<contact_btns.length; i++) {
         myMessageInput.addEventListener("keydown", function(event) {
             if (event.key === "Enter") {
                 sendMessage();
-                chat_field = document.querySelector('.chat-field');
-                chat_field.scrollTop = chat_field.scrollHeight;
             }
         });
     });
@@ -109,4 +107,6 @@ function sendMessage(){
     new_bubble.classList.add('sent-bubble')
     new_bubble.innerText = message;
     document.querySelector('.conversation').appendChild(new_bubble)
+    chat_field = document.querySelector('.chat-field');
+    chat_field.scrollTop = chat_field.scrollHeight;
 };
