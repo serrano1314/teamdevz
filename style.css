@@ -209,6 +209,17 @@ a:hover{
     border: solid 1px rgb(153, 153, 153);
 }
 
+/* find client page */
+.job-row{
+    color: #000;
+    padding: 10px 10px 10px 0px;
+    border-radius: 10px;
+}
+.job-row div {
+    border: solid 1px #000;
+    margin: 1px;
+}
+
 @keyframes colorChangeIn {
     0%{
         border-color: rgb(135, 211, 255);
