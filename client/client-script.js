@@ -2,14 +2,6 @@ let job_container = document.querySelector('.my-job-container');
 let job_card = document.querySelector('.my-job-container').querySelector('.job-row');
 job_card.style.display = "none";
 
-let job_card2 = job_card.cloneNode(true)
-job_card2.querySelector('.jobName').innerText = 'test2';
-job_card2.querySelector('.jobDescription').innerText = 'test2';
-job_card2.querySelector('.employerName').innerText = 'test2';
-job_card2.querySelector('.jobType').innerText = 'test2';
-job_card2.querySelector('.budget').innerText = 'test2';
-job_card2.style.display = "flex";
-
 
 jobs.forEach(job => {
     let cloneCard = job_card.cloneNode(true)
@@ -21,4 +13,16 @@ jobs.forEach(job => {
     cloneCard.style.display = "flex";
       
     job_container.appendChild(cloneCard);
+});
+
+function openHire(){
+    document.querySelector(".hire-popup").style.display = "block";
+}
+function closeHire(){
+    document.querySelector(".hire-popup").style.display = "none";
+}
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeHire();
+    }
 });

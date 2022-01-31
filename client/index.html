@@ -29,7 +29,7 @@
             <div class="container my-job-container">
                 <h3 class="mb-5">Jobs <span style="color:rgb(78, 142, 236);font-weight: bold;">you</span> might like</h3>
                 <!-- template start -->
-                <div class="row job-row">
+                <div class="row job-row" onclick="openHire()">
                     <div class="col my-auto">
                         <div class="short-div jobName" id="jobName">
                             Job Name
@@ -51,10 +51,53 @@
                     </div>
                 </div>
                 <!-- template end -->
+                
+                <div class="hire-popup pr-4 text-dark">
+                    <div class="d-flex flex-column pl-3">
+                        <div class="pt-3">
+                            <h3>Submit a proposal</h3>
+                        </div>
+                        <div class="form-row text-left">
+                            
+                            <div class="form-group col-md-12">
+                                <h4>Terms</h4>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="bid">Bid (₱)</label>
+                                <input class="form-control" id="bid" type="number" placeholder="The amount the client will see on your proposal">
+                                
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="jobDuration">How long will this project take?</label>
+                                <select id="jobDuration" class="form-control">
+                                    <option selected>More than 6 months</option>
+                                    <option>3 to 6 months</option>
+                                    <option>1 to 3 months</option>
+                                    <option>Less than 1 month</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <h4>Addional Details</h4>
+                                <label for="coverLetter">Cover Letter</label>
+                                <textarea class="form-control" id="coverLetter" rows='5' placeholder="Introductory / Why you're the best candidate for the job?"></textarea>
+                                <label for="attatchments">Attatchments</label>
+                                <p>Upload Project files (Optional)</p>
+                                <input type="file" id="attatchments">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="text-center m-3">
+                            <button class="btn btn-success" name="submit" type="submit">Submit Proposal</button>
+                        </div>
+                        <i onclick="closeHire()" value="" class="bi bi-x m-1 close-chat" style="font-size:25px;color:#000000"></i>
+                    </div>
+                </div>
+
             </div>
         </main>
         
-        <footer class="footer mt-auto fixed-bottom">
+        <footer class="footer mt-auto fixed-bottom"> 
         <div class="inner">
             <p>© 2022 Copyright: TeamDevz</p>
         </div>
