@@ -104,6 +104,14 @@ for (let i=0; i<contact_btns.length; i++) {
         });
     });
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeHire();
+        closeChat()
+    }
+});
+
 function sendMessage(){
     message = document.getElementById('myMessage').value;
     if(!message) return;
