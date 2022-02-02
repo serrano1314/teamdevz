@@ -59,5 +59,15 @@ let dev_profile = [
         bio: "A Friendly And Kind Student. I'm A 3rd Year Student In Technological University Of The Philippines And My Course Is Information System.",
         contact_no: '09552868891',
         email: 'Janwry.Delacruz@Tup.Edu.Ph'
+    },
+    {
+        id: '6', //please add 1 if adding new profile
+        first_name: "Christian Paul",
+        last_name: "Pedro",
+        role: "Assistant Developer",
+        skills: ['Active Listening  ','Adaptability','Creativity'],
+        bio: "From Parañaque City Studied At Technological University Of The Philippines, 21 Years Old , Simple And Approachable, Hobbies Playing Online Games And Basketball.",
+        contact_no: '09384054145',
+        email: 'Tambo, Parañaque City'
     }
         ];
