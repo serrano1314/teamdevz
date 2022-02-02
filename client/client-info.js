@@ -18,7 +18,7 @@ let jobs = [
         The candidate should have experience of performing an SEO audit and devising a checklist.
         History of previous SEO audits should be provided along with a strong rating.`,
         type: 'Hourly',
-        budget: 900
+        budget: 935.49
     },
     {
         id: '2',
@@ -27,7 +27,7 @@ let jobs = [
         job_description: `Writing node JS , expresses mongodb api for order , multi order item for multivendor, multi user and admin.
         Order need status which confirmation from vendor, shipped out provided with shipping tracking number, order completed.`,
         type: 'One-time Project',
-        budget: 500
+        budget: 500.00
     },
     {
         id: '3',
@@ -36,6 +36,6 @@ let jobs = [
         job_description: `We are looking for a crack email marketer, to manage our email marketing for our e-commerce site.
         Please tell me your experience in email marketing`,
         type: 'Hourly',
-        budget: 1000
+        budget: 1000.00
     }
 ];

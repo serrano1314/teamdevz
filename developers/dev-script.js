@@ -105,12 +105,7 @@ for (let i=0; i<contact_btns.length; i++) {
     });
 }
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
-        closeHire();
-        closeChat()
-    }
-});
+
 
 function sendMessage(){
     message = document.getElementById('myMessage').value;
@@ -125,3 +120,10 @@ function sendMessage(){
     chat_field = document.querySelector('.chat-field');
     chat_field.scrollTop = chat_field.scrollHeight;
 };
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeHire();
+        closeChat();
+    }
+});
